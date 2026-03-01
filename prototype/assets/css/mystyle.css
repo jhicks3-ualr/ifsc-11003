@@ -1,13 +1,17 @@
 body{width: 100%; background-color:cadetblue; font-family: "Book Antiqua", Palatina, "Palatino Linotype", serif;}
 th{border-radius: 4px; background-color: #D8BFD8;}
 td{border-radius: 4px; background-color: whitesmoke;}
-table{width: 100%;}
+table{display: block; margin-right: auto; margin-left: auto; width: 50%;}
 h1,h2,h3,h4{font-family: Garamond, serif; border-radius: 8px;}
 h1,h2,h3,h4,h5,caption{border-radius: 8px; width: 100%; text-align: center; background: #e0995f}
 img {display: block; margin: auto; border-radius: 8px; border: 1px solid #ddd; padding: 5px;}
 figcaption{text-align: center;}
 caption {font-size: 20px;}
 .img-transform img:hover {transform: scale(1.75);}
+.up-arrow {color: transparent; text-decoration: none; display: inline-block; width: 1em; height: 1em; overflow: hidden;}
+.up-arrow::before {content: "\2B85"; color: blue; position: absolute;}
+.mail-icon {color: transparent; text-decoration: none; display: inline-block; width: 1em; height: 1em; overflow: hidden;}
+.mail-icon::before {content: "\2709"; color: blue; position: absolute;}
 
 
 
