@@ -1,5 +1,15 @@
-body{ background-color:cadetblue; }
-table, tr, th, td { border: 1px solid black; }
-table {width: 50%;}
-h1 {text-align: center;}
+body{width: 100%; background-color:cadetblue; font-family: "Book Antiqua", Palatina, "Palatino Linotype", serif;}
+th{background-color: #D8BFD8;}
+td{background-color: whitesmoke;}
+table{width: 100%;}
+
+h1,h2,h3,h4{font-family: Garamond, serif;}
+h1,h2,h3,h4,h5,caption{width: 100%; text-align: center; background: #e0995f}
+img {display: block; margin: auto; border-radius: 8px; border: 1px solid #ddd; padding: 5px;}
+figcaption{text-align: center;}
+caption {font-size: 20px;}
+.img-transform img:hover {transform: scale(1.75);}
+
+
+
 
