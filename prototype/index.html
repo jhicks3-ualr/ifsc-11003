@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>IFSC 11003 | JHicks</title>
-  <meta name="description" content="My First Webpage">
-  <meta name="author" content="James Hicks">
-  <link href="assets/css/mystyle.css" rel="stylesheet"/>
+  <meta charset="utf-8"> <!-- Meta tag to tell Web Browser to user the UTF-8 Characters -->
+  <title>IFSC 11003 | JHicks</title> <!--Title display for browser tab-->
+  <meta name="description" content="My First Webpage"><!--provides the description for the webpage in a search engine-->
+  <meta name="author" content="James Hicks"><!--provides the author for the metadata used in search engines-->
+  <link href="assets/css/mystyle.css" rel="stylesheet"><!--links the html script to the css script-->
 </head>
 <body>
   <main>
@@ -17,15 +17,16 @@
       <figure><img src="assets/img/coffee_options.png" alt="Les Cafés Image" width="300" height="400">
         <figcaption>Les Cafés Coffee Guide</figcaption></figure>
 
-        <h3>My Story</h3>
-
-        <p>
-          Okay, so there I am in Brodeaux, France, at my first café and for the life of my I have no idea what I'm looking at.
-          The menu was overwhelming, and when I finally just took a blind leap and said "Affogato", out of sheer curiousity, I was met with confused looks and stares. Come to find out 
-          I had just ordered a dessert drink for breakfast. So after spending a week there trying everything on the menu, getting a French to English dictionary, and some trial an error
-          I figured, I'd share my knowledge with the world. So welcome to my "Guide Pratique" or my Practical Guide to coffee.
-          Below is a list of every beverage I tried, it's ingredients and my personal taste rating.
-        </p>
+      <article class="the big bean">        
+        <h3>My Story</h3>        
+          <p>
+            Okay, so there I am in Brodeaux, France, at my first café and for the life of my I have no idea what I'm looking at.
+            The menu was overwhelming, and when I finally just took a blind leap and said "Affogato", out of sheer curiousity, I was met with confused looks and stares. Come to find out 
+            I had just ordered a dessert drink for breakfast. So after spending a week there trying everything on the menu, getting a French to English dictionary, and some trial an error
+            I figured, I'd share my knowledge with the world. So welcome to my "Guide Pratique" or my Practical Guide to coffee.
+            Below is a list of every beverage I tried, it's ingredients and my personal taste rating.
+          </p>
+      </article>
 
       <table>
         <caption>Beverage Measurements</caption>
@@ -135,19 +136,69 @@
         </tr>
       </table>
 
-      <h4>Notes and Comments</h4>
-      <p>
-        My favorite beverage by far was the Cappucino, delicious and perfect for breakfast. The latte is basically a Cappucino, just in half. The Affogato was delicious,
-        and for a big wake up I recommend the Café au Lait, gets you alittle shaky, but at least you'll be alert.
-      </p>
+      <aside class="notes and comments">
 
-      <h3>
-        Home Café
-      </h3>
-      <p>
-        Now I'm sure you're wondering 
-      </p>
+        <h4>Notes and Comments</h4>
+        <p>
+          My favorite beverage by far was the Cappucino, delicious and perfect for breakfast. The latte is basically a Cappucino, just in half. The Affogato was delicious,
+          and for a big wake up I recommend the Café au Lait, gets you alittle shaky, but at least you'll be alert.
+        </p>
+      </aside>
+      <aside class="the lists">
+        <h3>
+          Home Café
+        </h3>
+        <p>
+          Now I'm sure you're wondering, "Can I make any of this at home?" and as they say <q>You miss 100% of the shots you don't take!</q> -Wayne Gretzky --Michael Scott.
+          So below will be a few lists of what you need for your own home café!
+        </p>
+      
+
+        <h4>Hardware needed</h4>
+        <ol>
+          <li>Espresso Machine, preferrably 1 with a milk steamer</li>
+          <li>A handheld milk frother wand doesn't hurt either </li>
+          <li>A Coffee Grinder</li>
+          <li>Espresso Tamper with scale</li>
+          <li>A stainless steel milk frother measuring cup</li>
+        </ol>
+        <h4>
+          What you'll drink
+        </h4>
+        <ul>
+          <li>I recommend Oatly if you use Oatmilk, it has the best consistency of the oatmilks.</li>
+          <li>Coffee is subjective, but for espresso I recommend anything dark roast, and Fidel & Co. has a delicious dark roast called Origin</li>
+          <li>And of course, ice cream, chocolate syrup, and cream for any sweet drinks</li>      
+        </ul>
+        <h3>Local Coffee Spots</h3>
+        <dl>
+          <dt>Locations in Little Rock</dt>
+          <dd><strong>Fidel & Co. (East Village location) 500 Shall Ave, Little Rock, AR</strong></dd>
+          <dd><strong>Pettaway Coffe. 406 E 21st St, Little Rock, AR</strong></dd>
+          <dt>Locations in Fayetteville</dt>
+          <dd><strong>Onyx Coffee Lab. 2418 N Gregg Ave, Fayetteville, AR</strong></dd>
+          <dd><strong>Word Press Cafe. 816 N College Ave, Fayettville, AR</strong></dd>
+        </dl>
+      </aside>
+      <h4>Closing Remarks and Info</h4>
+      <blockquote><em>I hope you enjoyed reading this as much as I enjoyed making it. The above coffee locations are real and I do recommend all of them.</em></blockquote>
     </section>
+
+    <h5>Some links</h5>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html" title="Link to main index page">Home</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Buffalo_National_River" target="_blank" title="Wiki Link">Buffalo National River</a></li>
+        <li><a href="https://ualr.edu" target="_blank" title="UALR Website">UALR</a></li>
+        <li><a href="mailto:jhicks3@ualr.edu" title="my email">My Email</a></li>
+      </ul>
+    </nav>
+    <h6>The Footer</h6>
+    <footer id="footer">
+        <p>&copy; 2026 James Hicks. a.k.a. The Ginger. | <a href="#top">Top Link</a> | <a href="mailto:jhicks3@ualr.edu" title="my email">Contact Me</a> </p>
+
+      </footer>
   </main>  
 </body>
 </html>
