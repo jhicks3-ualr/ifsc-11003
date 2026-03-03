@@ -2,9 +2,9 @@ body{width: 100%; background-color:cadetblue; font-family: "Trocchi", serif;}
 th{border-radius: 4px; background-color: #D8BFD8;}
 td{border-radius: 4px; background-color: whitesmoke;}
 table{display: block; margin-right: auto; margin-left: auto; width: 50%;}
-h1,h2,h3,h4{font-family: "Parisienne", cursive; border-radius: 8px;}
+h1,h2,h3,h4,h5{font-family: "Parisienne", cursive; border-radius: 8px;}
 h1,h2,h3,h4,h5,caption{border-radius: 8px; width: 100%; text-align: center; background: #e0995f}
-img {display: block; margin: auto; border-radius: 8px; border: 1px solid #ddd; padding: 5px;}
+img {display: block; margin: auto; border-radius: 8px; border: 1px solid #ddd; padding: 5px; box-shadow: 4px 4px 4px;}
 figcaption{text-align: center;}
 caption {font-size: 20px;}
 .img-transform img:hover {transform: scale(1.75);}
