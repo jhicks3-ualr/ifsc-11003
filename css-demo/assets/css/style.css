@@ -53,15 +53,64 @@ body {
     font-family: "Julius Sans One", sans-serif;
     background-color: #3B4242;
     color: white;
+    margin:0;
 }
 header.primary{
     background-color: #C2624C;
     color: #4CC2BF;
     text-align: center;
-    text-shadow: 2px 2px #000000;
+    /* Long Form
+    padding-top:40px;
+    padding-right:40px;
+    padding-left:40px;
+    padding-bottom:40px; */
+
+    /* Short Form single value */
+    /* padding:40px; */
+
+    /* T/R/B/L */
+    /* padding: 40px 20px 40px 20px; */
+
+    /* T/B | L/R */
+    padding: 40px 20px
+
 }
 
 header.primary a{
     color: #4CC2BF;
     text-decoration: none;
+}
+
+header.primary h1{
+    text-shadow: 4px 4px 4px #000000;
+    font-size:3rem;
+    margin:0;
+}
+header.primary p.subtitle{
+    font-size:1.4rem;
+    margin-top:3;
+    letter-spacing: -.3;
+}
+
+nav.primary ul{
+  padding:0px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+nav.primary ul li{
+  list-style-type: none;
+}
+
+nav.primary a{
+  background-color: rgba(158, 147, 147, 0.5);
+  padding:5px;
+  border: 1px solid black;
+  border-radius: 80px 50px 80px 50px;
+}
+
+nav.primary ul li a:hover {
+  background-color: rgba(158, 147, 147, 0.8);
+  transform: scale(1.75px);
 }
