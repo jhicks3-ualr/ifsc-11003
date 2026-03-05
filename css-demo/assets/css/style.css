@@ -51,12 +51,12 @@ html {
 /*----------------Global Styles--------------*/
 body {
     font-family: "Julius Sans One", sans-serif;
-    background-color: #3B4242;
+    background-color: #335F63;
     color: white;
     margin:0;
 }
 header.primary{
-    background-color: #C2624C;
+    background-color: #B03E19;
     color: #4CC2BF;
     text-align: center;
     /* Long Form
@@ -96,7 +96,7 @@ nav.primary ul{
   padding:0px;
   display:flex;
   flex-direction:row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 nav.primary ul li{
@@ -104,13 +104,13 @@ nav.primary ul li{
 }
 
 nav.primary a{
-  background-color: rgba(158, 147, 147, 0.5);
+  background-color: rgba(145, 11, 40, 0.568);
   padding:5px;
   border: 1px solid black;
   border-radius: 80px 50px 80px 50px;
 }
 
 nav.primary ul li a:hover {
-  background-color: rgba(158, 147, 147, 0.8);
-  transform: scale(1.75px);
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.75);
 }
