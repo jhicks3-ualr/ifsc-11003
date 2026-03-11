@@ -10,6 +10,18 @@ html {
 
 /* --------------Utility Classes ---------------- */
 
+img{
+  max-width:100%;
+}
+
+
+
+.container{
+  max-width:960px;
+  width:80vw;
+  margin: 20px auto;
+}
+
 /* Skip link utility: hidden until focused */
 .visually-hidden {
   border: 0;
@@ -51,12 +63,15 @@ html {
 /*----------------Global Styles--------------*/
 body {
     font-family: "Julius Sans One", sans-serif;
-    background-color: #335F63;
+    /* background-color: #335F63; */
+    background-color: #556868;
+    opacity: 0.9;
+    background-image: radial-gradient(circle at center center, #334849, #556868), repeating-radial-gradient(circle at center center, #334849, #334849, 26px, transparent 52px, transparent 26px);
+    background-blend-mode: multiply;
     color: white;
     margin:0;
 }
 header.primary{
-    background-color: #B03E19;
     color: #4CC2BF;
     text-align: center;
     /* Long Form
@@ -95,22 +110,78 @@ header.primary p.subtitle{
 nav.primary ul{
   padding:0px;
   display:flex;
-  flex-direction:row;
-  justify-content: center;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap:20px;
+  
 }
 
 nav.primary ul li{
   list-style-type: none;
+  width: 25%;
 }
 
 nav.primary a{
-  background-color: rgba(145, 11, 40, 0.568);
+  background-color: rgba(247, 247, 247, 0);
   padding:5px;
-  border: 1px solid black;
-  border-radius: 80px 50px 80px 50px;
+  border: 1px solid rgb(32, 211, 218);
+  border-radius: 60px 50px 60px 50px;
+  display:block;
 }
 
 nav.primary ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.75);
+  background-color: rgba(114, 106, 106, 0.514);
+  transform: scale(1.2);
+  
+}
+
+#content h2{
+  color:#4CC2BF;
+  border-bottom-style:double;
+  border-bottom-width: 3px;
+  
+}
+
+#content p{
+line-height:1.6;
+
+}
+
+#blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  gap:20px;
+}
+
+figure{
+  margin:0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:600px) {
+
+  .container{
+  width:95vw;
+  }
+
+  nav.primary ul{
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:20px;
+  }
+
+  nav.primary a{
+    display:block;
+    
+  }
+
+  nav.primary ul li{
+  list-style-type: none;
+  width: 100%;
+}
+
+
 }
