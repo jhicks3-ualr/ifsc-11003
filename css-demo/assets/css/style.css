@@ -119,12 +119,12 @@ nav.primary ul{
 
 nav.primary ul li{
   list-style-type: none;
-  width: 25%;
+  flex:1;
 }
 
-nav.primary a{
+nav.primary ul li a{
   background-color: rgba(247, 247, 247, 0);
-  padding:5px;
+  padding: 3px 15px;
   border: 1px solid rgb(32, 211, 218);
   border-radius: 60px 50px 60px 50px;
   display:block;
@@ -152,13 +152,72 @@ line-height:1.6;
   display:flex;
   flex-direction:row;
   justify-content:space-evenly;
-  gap:20px;
+  gap:30px;
+  flex-wrap: wrap;
 }
 
 figure{
   margin:0;
 }
 
+#blog article.post{
+  box-shadow:5px 5px 20px 5px #4CC2BF;
+  padding:10px;
+  font-size: .8rem;
+  flex:1;
+}
+
+#recent-posts{
+  flex:0 0 100%;
+}
+
+article.post a{
+  color:#ffffff;
+}
+
+article.post time, article.post figcaption{
+  text-transform: uppercase;
+  text-align:center
+}
+
+article.post p{
+  border: 1px solid #4CC2BF;
+}
+
+/* aria means accessible rich internet applications */
+aside[aria-label="Sidebar"]{
+  background-color: rgba(80, 107, 109, 0.267);
+  padding: 40px 0;
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  gap:40px;
+}
+
+aside footer{
+  display:none;
+}
+
+aside .container a{
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+  color:#ffffff;
+}
+
+aside .widget{
+  flex:1;
+}
+
+footer.primary{
+  background-color: rgba(80, 107, 109, 0.267);
+  width:fit-content;
+  text-align:center;
+  margin: 0 auto;
+}
 /* Media Queries */
 
 @media screen and (max-width:600px) {
@@ -180,7 +239,7 @@ figure{
 
   nav.primary ul li{
   list-style-type: none;
-  width: 100%;
+  width: 75%;
 }
 
 
