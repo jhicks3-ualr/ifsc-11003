@@ -142,8 +142,9 @@ nav.primary ul li a:hover {
 
 #content h2{
   color:#4CC2BF;
-  border-bottom-style:double;
-  border-bottom-width: 3px;
+  border-left-style: double;
+  border-bottom-style: double;
+  
   
 }
 
@@ -158,6 +159,11 @@ line-height:1.6;
   justify-content:space-evenly;
   gap:30px;
   flex-wrap: wrap;
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+  padding-bottom: 30px;
+  border-color:#4CC2BF;
+  margin-bottom: 20px;
 }
 
 figure{
@@ -165,7 +171,7 @@ figure{
 }
 
 #blog article.post{
-  box-shadow:5px 5px 20px 5px #4CC2BF;
+  box-shadow:5px 5px 20px 5px #e0aa33a2;
   padding:10px;
   font-size: .8rem;
   flex:1;
@@ -174,18 +180,24 @@ figure{
 #recent-posts{
   flex:0 0 100%;
   color:#4CC2BF;
+  border-left-style: double;
   border-bottom-style:double;
   border-bottom-width: 3px;
 }
 
+
 article.widget h2{
   color:#4CC2BF;
+  border-left-style: double;
   border-bottom-style:double;
-  border-bottom-width: 3px;
 }
 
 article.post a{
   color:#ffffff;
+}
+
+article.post a:hover{
+  text-decoration: none;
 }
 
 .post-date {
@@ -208,6 +220,90 @@ article.post p{
   padding: 5px;
 }
 
+#practice h2{
+  color:#4CC2BF;
+  border-left-style: double;
+  border-bottom-style: double;
+  margin-top: 15px;
+}
+
+#practice a{
+  color: #ffffff;
+}
+
+#practice a:hover{
+  text-decoration: none;
+}
+
+#practice h3{
+  border-left-style: solid;
+  border-bottom-style: solid;
+  color:#4CC2BF;
+}
+
+#practice h4{
+  display: inline-block;
+  border-left: 10px solid;
+  color: #4CC2BF;
+  padding: 8px 0 5px 8px;
+}
+
+table{
+  width: 100%;
+  border: 1px solid #4CC2BF;
+  border-collapse: collapse;
+}
+
+caption{
+  font-weight: bold;
+  margin: 5px;
+}
+
+td{
+  border: 1px solid #4CC2BF;
+  padding: 5px;
+}
+
+tr:nth-child(even){
+  background-color: #e0aa33a2;
+}
+
+tr:hover{
+  background-color: #ffffff48;
+}
+
+th{
+  padding: 3px;
+  background-color: #4cc2be38;
+}
+
+td:nth-child(2), td:nth-child(3){
+  text-align: right;
+}
+
+/* .img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border-style: inset;
+  border-width: 4px;
+  max-width: 10%;
+}
+
+.img-left{
+  float:left;
+  margin: 10px 20px 10px 0;
+  border-style: inset;
+  border-width: 4px;
+  max-width: 10%;
+} */
+
+.img-center{
+  display: block;
+  margin: 20px auto;
+  border-style: inset;
+  border-width: 4px;
+  max-width: 15%;
+}
 /* aria means accessible rich internet applications */
 aside[aria-label="Sidebar"]{
   background-color: rgba(80, 107, 109, 0.267);
