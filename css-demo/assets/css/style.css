@@ -25,7 +25,7 @@ img{
 /* Skip link utility: hidden until focused */
 .visually-hidden {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(0 0 0 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -38,7 +38,7 @@ img{
 /* Make skip link visible when keyboard users tab to it */
 .visually-hidden:focus,
 .visually-hidden:focus-visible {
-  clip: auto;
+  clip-path: none;
   height: auto;
   width: auto;
   margin: 0;
@@ -97,14 +97,18 @@ header.primary a{
 }
 
 header.primary h1{
-    text-shadow: 4px 4px 4px #000000;
+    text-shadow: 10px 7px 10px #17d5db;
     font-size:3rem;
     margin:0;
 }
 header.primary p.subtitle{
+    display: inline-block;
     font-size:1.4rem;
-    margin-top:3;
-    letter-spacing: -.3;
+    padding: 2px;
+    margin-top:20px;
+    letter-spacing: 3px;
+    border-left-style: double;
+    border-bottom-style: double;
 }
 
 nav.primary ul{
@@ -169,19 +173,39 @@ figure{
 
 #recent-posts{
   flex:0 0 100%;
+  color:#4CC2BF;
+  border-bottom-style:double;
+  border-bottom-width: 3px;
+}
+
+article.widget h2{
+  color:#4CC2BF;
+  border-bottom-style:double;
+  border-bottom-width: 3px;
 }
 
 article.post a{
   color:#ffffff;
 }
 
-article.post time, article.post figcaption{
+.post-date {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px #4CC2BF;
+  margin-bottom: 10px;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.post figcaption{
   text-transform: uppercase;
-  text-align:center
+  text-align:center;
 }
 
 article.post p{
   border: 1px solid #4CC2BF;
+  padding: 5px;
 }
 
 /* aria means accessible rich internet applications */
