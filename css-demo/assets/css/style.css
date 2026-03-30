@@ -281,6 +281,36 @@ td:nth-child(2), td:nth-child(3){
   text-align: right;
 }
 
+#practice ol{
+  list-style-type:lower-roman;
+}
+
+#practice ul ul{
+  color:red;
+}
+
+#practice dt{
+  font-weight:bold;
+}
+
+dd + dt{
+  margin-top:20px;
+  color:red;
+}
+
+blockquote{
+  background-color:#172635;
+  border:4px double #c0c0c0;
+  color:#fff;
+  padding: 40px;
+  border-radius: 20px 60px;
+}
+
+
+#practice dd{
+  margin-left:0;
+}
+
 /* .img-right{
   float:right;
   margin: 10px 0 10px 20px;
