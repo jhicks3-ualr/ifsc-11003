@@ -24,51 +24,70 @@
       text-align: center;
       line-height: 24px;
     }
+  
+.tile{
+  width: 370px;
+      height: 150px;
+      float: left;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      /* I copied your tile idea because I thought it was cleaner than my original idea, but I left my original setup and 
+      commented it out. */
+}
     #wrapper {
       background-color: #FFF;
-      border: 1px solid #000000;
+      border: 1px solid #c0c0c0;
       width: 800px;
       margin-right: auto;
       margin-left: auto;
       text-shadow: 2px 2px #000;
-          
+      padding-top: 20px;  
     }
     #navy {
       background-color: #001f3f;
-      width:370px;
+      /* width: 370px;
       height: 150px;
       float: left;
-      margin: 14px;
+      margin: 14px; - original idea
+      margin-left: 20px; - copied from you
+      margin-bottom: 20px; - copied from you */
       
     }
     #teal {
       background-color: #39CCCC;
-      width:370px;
+      /* width: 370px;
       height: 150px;
       float: left;
-      margin: 14px;
+      margin: 14px; - original idea
+      margin-left: 20px; - copied from you
+      margin-bottom: 20px; - copied from you */
       
     }
     #blue {
       background-color: #0074D9;
-      width:370px;
+      /* width: 370px;
       height: 150px;
       float: left;
-      margin: 14px;
+      margin: 14px; - original idea
+      margin-left: 20px; - copied from you
+      margin-bottom: 20px; - copied from you */
       
 
     }
     #aqua {
       background-color: #7FDBFF;
-      width:370px;
+      /* width: 370px;
       height: 150px;
       float: left;
-      margin: 14px;
+      margin: 14px; - original idea
+      margin-left: 20px; - copied from you
+      margin-bottom: 20px; - copied from you */
       
     }
     #footer {
       background-color: #666;
-      margin: 14px 14px;
+      /* margin: 14px 14px; original idea*/
+      margin: 20px; /* copied from you */
       clear: both;
       
     }
@@ -82,10 +101,10 @@
 <body>
   <h1>Float 1</h1>
   <section id="wrapper">
-    <div id="navy">Navy</div>
-    <div id="teal">Teal</div>
-    <div id="blue">Blue</div>
-    <div id="aqua">Aqua</div>
+    <div id="navy" class="tile">Navy</div>
+    <div id="teal" class="tile">Teal</div>
+    <div id="blue" class="tile">Blue</div>
+    <div id="aqua" class="tile">Aqua</div>
     <div id="footer">Footer</div>
   </section>
 </body>
