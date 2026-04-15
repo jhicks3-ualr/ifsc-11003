@@ -91,6 +91,10 @@ header.primary{
 
 }
 
+#contact header.primary{
+  color: #c0c24c;
+}
+
 header.primary a{
     color: #4CC2BF;
     text-decoration: none;
