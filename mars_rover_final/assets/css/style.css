@@ -3,3 +3,29 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.visually-hidden {
+  border: 0;
+  clip-path: inset(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.visually-hidden:focus,
+.visually-hidden:focus-visible {
+  clip-path: none;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 10px 14px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #ffffff;
+  color: #172635;
+  z-index: 9999;
+  border-radius: 6px;
+}
