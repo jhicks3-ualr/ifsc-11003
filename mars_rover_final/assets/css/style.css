@@ -8,6 +8,8 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  background-image: url("/mars_rover_final/assets/img/house.png");
+  background-attachment: fixed;
 }
 .visually-hidden {
   border: 0;
@@ -42,7 +44,9 @@ header.primary {
   width: 100%;
   padding: 30px;
 }
-
+p.subtitle{
+  margin-bottom: 15px;
+}
 header.primary a{
   color: black;
   text-decoration: none;
@@ -72,7 +76,7 @@ nav.primary-container ul li a{
 
 nav.primary-container ul li a:hover {
   background-color: rgba(114, 106, 106, 0.514);
-  transform: scale(1.2); 
+  transform: scale(1.1); 
 }
 
 main.container{
@@ -81,18 +85,221 @@ main.container{
 }
 
 #the-plot{
-  border: solid 1px #000000;
+  display: grid;
+  background-color: #dddddd;
   margin: 30px;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: min-content 1fr;
+  text-align: left;
+  gap: 1rem;
+  box-shadow: 5px 5px 20px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow: auto;
+  position: relative;
 }
 
 #the-plot img{
-  max-width: 12%;
-  height: auto;
+  width: auto;
   grid-area: 1 / 1 / 3 / 2;
+  border-radius: 10px 0px 0px 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 #the-plot h2{
-  grid-area: 1 / 2 / 2 / 3
+  margin-bottom: 0;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#the-plot p{
+  padding-right: 5px;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+h2.blog-title{
+  background-color: #dddddd;
+  width: 100%;
+  border-radius: 10px;
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+div.evidence {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+article.creators{
+  box-shadow: 5px 5px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color:#dddddd;
+  grid-area: 1 / 1 / 2 / 5;
+}
+
+article.creators p{
+  margin: 5px;
+}
+
+article.holmes{
+  background-color:#dddddd;
+  box-shadow: 5px 5px 20px;
+  border-radius: 10px;
+  margin: 10px;
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+article.holmes p{
+  margin: 5px;
+}
+
+article.poirot{
+  box-shadow: 5px 5px 20px;
+  border-radius: 10px;
+  background-color:#dddddd;
+  margin: 10px;
+  grid-area: 2 / 3 / 3 / 5;
+}
+
+article.poirot p{
+  margin: 5px;
+}
+
+#works h2{
+  background-color:#dddddd;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+caption{
+  background-color:#dddddd;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: underline;
+  font-weight: bold;
+  width: auto;
+  font-size: 20px;
+}
+
+table{
+  width: 75%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th{
+  background-color: #c0c0c0;
+}
+
+tr:nth-child(even){
+  background-color: #c0c0c0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+tr:nth-child(odd){
+  background-color:#dddddd;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+tr:hover td{
+  background-color: #464545;
+  color:#dddddd;
+}
+
+p.main-note{
+  background-color:#dddddd;
+  padding: 5px;
+  border-radius: 5px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+#works h3{
+  background-color:#dddddd;
+  padding: 5px;
+  border-radius: 5px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+#works ul{
+  background-color: #dddddd;
+  border-radius: 5px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+#works ul li:not(:last-child){
+  margin-bottom: 7px;
+  border-bottom: 4px double;
+  padding-bottom: 7px;
+}
+
+
+#quotes{
+  background-color:#dddddd;
+  padding: 5px;
+  border-radius: 5px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+#quotes h4{
+  padding-bottom: 5px;
+}
+
+#quotes blockquote{
+  padding-bottom: 5px;
+}
+
+
+#comments {
+  margin-top: 10px;
+  background-color:#dddddd;
+}
+
+form, footer{
+  background-color:#dddddd;
+}
+
+
+@media screen and (max-width:600px) {
+
+  .container{
+  width:95vw;
+  }
+
+  nav.primary ul{
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:20px;
+  }
+
+  nav.primary a{
+    display:block;
+    
+  }
+
+  nav.primary ul li{
+  list-style-type: none;
+  width: 75%;
+}
+
+
 }
 
