@@ -96,6 +96,7 @@ main.container{
   max-height: 200px;
   overflow: auto;
   position: relative;
+  box-shadow: inset 4px 4px 15px 0px #000000;
 }
 
 #the-plot img{
@@ -110,6 +111,7 @@ main.container{
 #the-plot h2{
   margin-bottom: 0;
   grid-area: 1 / 2 / 2 / 3;
+  padding-top: 30px;
 }
 
 #the-plot p{
@@ -122,6 +124,8 @@ h2.blog-title{
   width: 100%;
   border-radius: 10px;
   grid-area: 1 / 1 / 2 / 4;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  padding: 5px;
 }
 
 div.evidence {
@@ -131,11 +135,12 @@ div.evidence {
 }
 
 article.creators{
-  box-shadow: 5px 5px 20px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
   border-radius: 10px;
   margin: 10px;
   background-color:#dddddd;
   grid-area: 1 / 1 / 2 / 5;
+  padding: 5px;
 }
 
 article.creators p{
@@ -148,6 +153,8 @@ article.holmes{
   border-radius: 10px;
   margin: 10px;
   grid-area: 2 / 1 / 3 / 3;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  padding: 5px;
 }
 
 article.holmes p{
@@ -160,6 +167,8 @@ article.poirot{
   background-color:#dddddd;
   margin: 10px;
   grid-area: 2 / 3 / 3 / 5;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  padding: 5px;
 }
 
 article.poirot p{
@@ -277,10 +286,85 @@ form, footer{
   background-color:#dddddd;
 }
 
+/* Creators page CSS */
+
+#creators-intro{
+  background-color:#dddddd;
+  width: 75%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  padding: 10px;
+}
+
+article.doyle-intro{
+  display: grid;
+  background-color:#dddddd;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  width: 75%;
+  margin: 5px auto;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  overflow: auto;
+  padding: 10px;
+}
+
+p.doyle-intro{
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 5px;
+  text-align: left;
+}
+
+h3.doyle-intro{
+  grid-area: 1 / 1 / 2 / 3;
+  margin: 5px;
+}
+
+figure.doyle-intro{
+  grid-area: 2 / 1 / 3 / 2;
+  margin-bottom: 5px;
+}
+
+article.christie-intro{
+  display: grid;
+  background-color:#dddddd;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  width: 75%;
+  margin: 5px auto;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  overflow: auto;
+  padding: 10px;
+}
+
+p.christie-intro{
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 5px;
+  text-align: right;
+}
+
+h3.christie-intro{
+  grid-area: 1 / 1 / 2 / 3;
+  margin: 5px;
+}
+
+figure.christie-intro{
+  grid-area: 2 / 2 / 3 / 3;
+  margin-bottom: 5px;
+}
+
+
+
 
 @media screen and (max-width:600px) {
 
   .container{
+  width:95vw;
+  }
+
+  .doyle-intro{
   width:95vw;
   }
 
