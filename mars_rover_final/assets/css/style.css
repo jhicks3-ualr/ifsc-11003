@@ -134,6 +134,10 @@ div.evidence {
   grid-template-rows: auto auto;
 }
 
+.doyle-picture, .christie-picture, .sherlock-outline, .ustinov-picture{
+  border: 3px double;
+}
+
 article.creators{
   box-shadow: inset 4px 4px 15px 0px #000000;
   border-radius: 10px;
@@ -297,7 +301,7 @@ form, footer{
   padding: 10px;
 }
 
-article.doyle-intro{
+article.doyle-intro-container{
   display: grid;
   background-color:#dddddd;
   grid-template-columns: 1fr 1fr;
@@ -326,7 +330,11 @@ figure.doyle-intro{
   margin-bottom: 5px;
 }
 
-article.christie-intro{
+.doyle-statue, .christie-statue{
+  border: 3px double;
+}
+
+article.christie-intro-container{
   display: grid;
   background-color:#dddddd;
   grid-template-columns: 1fr 1fr;
@@ -337,6 +345,7 @@ article.christie-intro{
   box-shadow: inset 4px 4px 15px 0px #000000;
   overflow: auto;
   padding: 10px;
+  
 }
 
 p.christie-intro{
@@ -355,9 +364,101 @@ figure.christie-intro{
   margin-bottom: 5px;
 }
 
+/* Sherlock Page */
 
+#sherlock-intro{
+  background-color:#dddddd;
+  width: 75%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  padding: 10px;
+}
 
+article.sherlock-page-container{
+  display: grid;
+  background-color:#dddddd;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  width: 75%;
+  margin: 5px auto;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  overflow: auto;
+  padding: 20px;
+  gap: 10px;
+}
 
+h3.sherlock-page{
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+p.sherlock-page-p1{
+  grid-area: 2 / 2 / 3 / 3;
+  text-align: left;
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+figure.sherlock-page{
+  grid-area: 2 / 1 / 4 / 2;
+  margin-right: 15px;
+}
+
+img.sherlock-statue{
+  border: 3px double;
+}
+
+ol.sherlock-page-list{
+  grid-area: 3 / 2 / 4 / 3;
+  list-style-type: upper-roman;
+  margin-left: 35px;
+  text-align: left;
+  font-size: 18px;
+  padding: 0 0 20px;
+}
+
+p.sherlock-page-p2{
+  grid-area: 4 / 1 / 5 / 3;
+  font-size: 18px;
+}
+
+/* Poirot Page */
+
+#poirot-intro{
+  background-color:#dddddd;
+  width: 75%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  padding: 10px;
+}
+
+article.poirot-page-container{
+  display: grid;
+  background-color:#dddddd;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  width: 100%;
+  margin: 5px auto;
+  border-radius: 10px;
+  box-shadow: inset 4px 4px 15px 0px #000000;
+  overflow: auto;
+  padding: 20px;
+  gap: 10px;
+}
+
+h3.poirot-page{
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+figure.poirot-figure1{
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+figure.poirot-figure2{
+  grid-area: 2 / 2 / 3 / 3;
+}
 @media screen and (max-width:600px) {
 
   .container{
@@ -365,6 +466,10 @@ figure.christie-intro{
   }
 
   .doyle-intro{
+  width:95vw;
+  }
+
+  .christie-intro{
   width:95vw;
   }
 
