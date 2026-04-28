@@ -11,6 +11,7 @@ body {
   background-image: url("/mars_rover_final/assets/img/house.png");
   background-attachment: fixed;
 }
+
 .visually-hidden {
   border: 0;
   clip-path: inset(0 0 0 0);
@@ -457,19 +458,28 @@ figure.poirot-figure1{
 }
 
 figure.poirot-figure2{
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 4 / 3;
 }
+
+.poirot-art, .poirot-obit{
+  border: 3px double;
+}
+
+p.poirot-page-p{
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: left;
+}
+
+/* About me page */
+
+
 @media screen and (max-width:600px) {
 
   .container{
   width:95vw;
   }
 
-  .doyle-intro{
-  width:95vw;
-  }
-
-  .christie-intro{
+  .doyle-intro,.christie-intro, .sherlock-page-container, .poirot-page-container{
   width:95vw;
   }
 
