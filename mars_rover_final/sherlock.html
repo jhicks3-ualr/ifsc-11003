@@ -13,28 +13,35 @@
 
     <!-- Style Sheet -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Java script -->
+    <script src="assets/js/marsjava.js" defer></script>
 </head>
 
-<body>
+<body id="top">
 
   <a class="visually-hidden" href="#main-content">Skip to main content</a>
   <header class="primary">
+    <div class="theme-switch-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" aria-label="Toggle dark and light mode">
+        <span class="slider-round"></span>
+      </label>
+      <span>Color Theme</span>
+    </div>    
     <h1>Sleuth vs. Sleuth</h1>
-    <p class="subtitle"><strong>Holmes and Poirot - The Great Literay Detectives</strong></p>
-    <nav class="primary-container" aria-label="Primary Navigation">
+    <p class="subtitle"><strong>Holmes and Poirot - The Great Literary Detectives</strong></p>
+    <nav class="primary" aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html"><strong>The Main Page</strong></a></li>
         <li><a href="creators.html"><strong>The Creators</strong></a></li>
         <li><a href="sherlock.html"><strong>Sherlock Holmes</strong></a></li>
         <li><a href="poirot.html"><strong>Hercule Poirot</strong></a></li>
         <li><a href="about.html"><strong>About Me</strong></a></li>
-        <li><a href="contact.html"><strong>My Deets</strong></a></li>
-        <li><a href="resources.html"><strong>Getting Sourced</strong></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main landmark gives you a clean selector target for weeks 6–9 -->
     <main id="main-content" class="container">
     <section id="sherlock-intro">
       <h2>Literary Superhero</h2>
@@ -45,7 +52,7 @@
     <article class="sherlock-page-container">
         <h3 class="sherlock-page">Consulting Detective</h3>
         <figure class="sherlock-page">
-          <img src="assets/img/holmes_statue.png" class="sherlock-statue" alt="Sherlock-page Image">
+          <img src="assets/img/holmes_statue.png" class="sherlock-statue" alt="Bronze Statue of Sherlock Holmes in Edinburgh, Scotland">
           <figcaption>Statue of Sherlock Holmes in Edinburgh, Scotland</figcaption>
         </figure>
         <p class="sherlock-page-p1">
@@ -55,7 +62,7 @@
           <ol class="sherlock-page-list">
             <li>He has a brother named Mycroft.</li>
             <li>He is incredibly well versed in the violin, boxing, and fencing.</li>
-            <li>He has absolutely no knowledge of the astronomy, but can tell at a glance the exact location in London someone has been based on the mud on their shoes.</li>
+            <li>He has absolutely no knowledge of astronomy, but can tell at a glance the exact location in London someone has been based on the mud on their shoes.</li>
             <li>He wrote a case study on cigar ash and can identify over 50 types of ashes.</li>
             <li>He dabbles in chemistry and deals with a number of poisons often for study.</li>
             <li>He can go many days without food or sleep if a case is interesting enough.</li>
@@ -63,15 +70,15 @@
             <li>He has devoted his whole existence to the detection and deduction of crime.</li>
           </ol>
         <p class="sherlock-page-p2">
-          The list goes on a bit longer but you get the point, we know nothing truely of his background, when we are introduced to Holmes in <i>A Study in Scarlet</i> he already has a reputation as 
+          The list goes on a bit longer but you get the point, we know nothing truly of his background, when we are introduced to Holmes in <cite>A Study in Scarlet</cite> he already has a reputation as 
           a self described "Consulting Detective". His initial character and methods were based on Conan Doyles medical teacher Dr. Joseph Bell, who was known do diagnose patients without touching them. 
-          However...in the second Holmes novel <i>The Sign of the Four</i> we meet a slightly different Holmes, still the same amazing deducer of crime...but alittle more eccentric, and far less militant. 
+          However...in the second Holmes novel <cite>The Sign of the Four</cite> we meet a slightly different Holmes, still the same amazing deducer of crime...but a little more eccentric, and far less militant. 
           It is suspected that after meeting Oscar Wilde, whom Conan Doyle adored, and whom was also known for being a bit of a hedonist, Doyle gave new life to Holmes. We see him take a more 
           eccentric and dark tone, while still maintaining his logical reasoning skills and deductive practices. Holmes was even at times able to seemingly read minds by picking up the tiniest observations
-          of people. He had such a strong influence over the British Public that when he was initially killed off in <i>The Final Problem</i> there was a mass public revolt. Some thought Holmes a real person 
-          since Conan Doyle was known to use real world places and events in his stories. Citizens wore black bands on their arms in morning, and Doyle's mailbox exploded with letters. It could be said that Doyle 
-          never wanted to really kill Holmes as we don't actually "see" the Detective die, it is only assumed through the narration of John Watson. After some time (about ten years) Doyle would publish <i>The Adventure of the Empty House</i> 
-          sparking the return of Holmes, and exciting a fandom that had reached beyond the UK accross the pond to the US. Holmes had such a grip on the public that he even inspired modern day detective methods 
+          of people. He had such a strong influence over the British Public that when he was initially killed off in <cite>The Final Problem</cite> there was a mass public revolt. Some thought Holmes a real person 
+          since Conan Doyle was known to use real world places and events in his stories. Citizens wore black bands on their arms in mourning, and Doyle's mailbox exploded with letters. It could be said that Doyle 
+          never wanted to really kill Holmes as we don't actually <em>see</em> the Detective die, it is only assumed through the narration of John Watson. After some time (about ten years) Doyle would publish <cite>The Adventure of the Empty House</cite> 
+          sparking the return of Holmes, and exciting a fandom that had reached beyond the UK across the pond to the US. Holmes had such a grip on the public that he even inspired modern day detective methods 
           of looking for minute clues, finger and foot prints. The UK Police even use a specialized IT system for complex investigations called the Home Office Large Major Enquiry System...or H.O.L.M.E.S. 
           Sherlock Holmes has been one of the most dominating literary figures in history, and his stories have been a true pleasure to read.
         </p>
@@ -85,7 +92,7 @@
   
 
   <footer class="primary">
-    <p>&copy; 2026 The Ginger</p>
+    <p>&copy; 2026 The Ginger  | <a href="#top" class="up-arrow">Top Link</a> | <a href="mailto:jhicks3@ualr.edu" title="my email" class="mail-icon">Contact Me</a></p>
   </footer>
 
 </body>

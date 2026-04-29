@@ -13,28 +13,35 @@
 
     <!-- Style Sheet -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Java script -->
+    <script src="assets/js/marsjava.js" defer></script>
 </head>
 
-<body>
+<body id="top">
 
   <a class="visually-hidden" href="#main-content">Skip to main content</a>
   <header class="primary">
+    <div class="theme-switch-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" aria-label="Toggle dark and light mode">
+        <span class="slider-round"></span>
+      </label>
+      <span>Color Theme</span>
+    </div>    
     <h1>Sleuth vs. Sleuth</h1>
-    <p class="subtitle"><strong>Holmes and Poirot - The Great Literay Detectives</strong></p>
-    <nav class="primary-container" aria-label="Primary Navigation">
+    <p class="subtitle"><strong>Holmes and Poirot - The Great Literary Detectives</strong></p>
+    <nav class="primary" aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html"><strong>The Main Page</strong></a></li>
         <li><a href="creators.html"><strong>The Creators</strong></a></li>
         <li><a href="sherlock.html"><strong>Sherlock Holmes</strong></a></li>
         <li><a href="poirot.html"><strong>Hercule Poirot</strong></a></li>
         <li><a href="about.html"><strong>About Me</strong></a></li>
-        <li><a href="contact.html"><strong>My Deets</strong></a></li>
-        <li><a href="resources.html"><strong>Getting Sourced</strong></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main landmark gives you a clean selector target for weeks 6–9 -->
     <main id="main-content" class="container">
     <section id="poirot-intro">
       <h2>Working Retirement</h2>
@@ -43,24 +50,24 @@
       </p>
     </section>      
     <article class="poirot-page-container">
-        <h3 class="poirot-page">From Doctor to Author...and more</h3>
+        <h3 class="poirot-page">The World's Most Refined Detective</h3>
         <figure class="poirot-figure1">
-          <img src="assets/img/poirot_art.png" class="poirot-art" alt="Poirot-page Image">
+          <img src="assets/img/poirot_art.png" class="poirot-art" alt="Painting of Hercule Poirot by Artist Sean Pratt, October 4, 2025">
           <figcaption>Hercule Poirot - Illustration</figcaption>
         </figure>
         <figure class="poirot-figure2">
-          <img src="assets/img/poirot_obit.jpeg" class="poirot-obit" alt="Poirot-page Image">
+          <img src="assets/img/poirot_obit.jpeg" class="poirot-obit" alt="New York Times Obituary of Hercule Poirot, August 6, 1975">
           <figcaption>Hercule Poirot Obituary, New York Times 1975</figcaption>
         </figure>
         <p class="poirot-page-p">Commonly thought of as French, given his accent and common use of the French Language, Poirot was actually a world famous Belgian Detective, who could never seem 
-          to find any peace in his retirement. He was described as a meticulous and obsessive individual constaintly straightening his mustache or hair, correcting table arrangements, even going so far as to brush dirt or flecks of dust off of others. He presents himself as a very 
+          to find any peace in his retirement. He was described as a meticulous and obsessive individual constantly straightening his mustache or hair, correcting table arrangements, even going so far as to brush dirt or flecks of dust off of others. He presents himself as a very 
           proper and refined gentlemen, with the air of someone who knows more than he is willing to tell. The biggest distinction between him and Sherlock Holmes, however, is that while Holmes 
           is known to go to any lengths to find evidence, even crawling on his hands and knees to detect the smallest scrap of details, Poirot does all of his work in his mind. He is famous for saying 
-          "It is the brain, the little gray cells on which one must rely. One must seek the truth within-not without". In his second novel <i>Murder on the Links</i>, Christie pits the Belgium against 
-          a distincltly Holmesian detective, I believe in an effort to differentiate her creation from Conan Doyles. You have to remember not only was Poirot created just after the end of Holmes, who 
+          "It is the brain, the little gray cells on which one must rely. One must seek the truth within-not without". In his second novel <cite>Murder on the Links</cite>, Christie pits the Belgium against 
+          a distinctly Holmesian detective, I believe in an effort to differentiate her creation from Conan Doyles. You have to remember not only was Poirot created just after the end of Holmes, who 
           had a very dedicated fandom, but the world would compare ANY new literary detective to the superstar that was Holmes. I personally believe she did a great job of distinguishing Poirot from Holmes,
           his stories often require two readings, as Christie was a master of keeping us in the dark while also leaving hints throughout the story, that aren't usually picked up until the second read. However, I think 
-          the true genius behind Poirots stories is the fact that even though Christie establishes a follows a distinct formula, we never know where she's going to go. Every story has multiple rug pulls, but never 
+          the true genius behind Poirots stories is the fact that even though Christie establishes and follows a distinct formula, we never know where she's going to go. Every story has multiple rug pulls, but never 
           feels chaotic, nor does it feel predictable. And there in lies the genius of Poirot, no matter the chaos of the crime, his mastery of "the little gray cells" make him our raft in a raging sea.
         </p>
     </article>
@@ -73,7 +80,7 @@
   
 
   <footer class="primary">
-    <p>&copy; 2026 The Ginger</p>
+    <p>&copy; 2026 The Ginger  | <a href="#top" class="up-arrow">Top Link</a> | <a href="mailto:jhicks3@ualr.edu" title="my email" class="mail-icon">Contact Me</a></p>
   </footer>
 
 </body>

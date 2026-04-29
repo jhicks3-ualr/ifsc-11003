@@ -12,31 +12,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Parisienne&display=swap" rel="stylesheet">
 
     <!-- Style Sheet -->
-    <link href="assets/css/style.css" rel="stylesheet" >
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Java script -->
+    <script src="assets/js/marsjava.js" defer></script>
 </head>
 
-<body>
+<body id="top">
   <a class="visually-hidden" href="#main-content">Skip to main content</a>
   <header class="primary">
+    <div class="theme-switch-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" aria-label="Toggle dark and light mode">
+        <span class="slider-round"></span>
+      </label>
+      <span>Color Theme</span>
+    </div>
     <h1>Sleuth vs. Sleuth</h1>
-    <p class="subtitle"><strong>Holmes and Poirot - The Great Literay Detectives</strong></p>
-    <nav class="primary-container" aria-label="Primary Navigation">
+    <p class="subtitle"><strong>Holmes and Poirot - The Great Literary Detectives</strong></p>
+    <nav class="primary" aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html"><strong>The Main Page</strong></a></li>
         <li><a href="creators.html"><strong>The Creators</strong></a></li>
         <li><a href="sherlock.html"><strong>Sherlock Holmes</strong></a></li>
         <li><a href="poirot.html"><strong>Hercule Poirot</strong></a></li>
         <li><a href="about.html"><strong>About Me</strong></a></li>
-        <li><a href="contact.html"><strong>My Deets</strong></a></li>
-        <li><a href="resources.html"><strong>Getting Sourced</strong></a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main landmark gives you a clean selector target for weeks 6–9 -->
   <main id="main-content" class="container">
     <section id="the-plot">
-      <img src="assets/img/book_reading.webp" height="200" alt="Open-book Image">
+      <img src="assets/img/book_reading.webp" height="200" alt="An open book being read">
       <h2>The Plot Thickens</h2>
       <p>
         The objective of this blog is information. In reading through the stories of Sherlock Holmes and Hercule Poirot, it's difficult not to compare the two literary detectives.
@@ -45,15 +52,15 @@
         Do I have my own opinion? Yes. Will I voice my opinion? No. My only intent is to provide information and let YOU the reader make your own decision.
       </p>
     </section>
-    <section id="blog" aria-labelledby="blog">
-      <h2 class="blog-title">The Evidence</h2>
+    <section id="blog" aria-labelledby="evidence-header">
+      <h2 id="evidence-header" class="blog-title">The Evidence</h2>
       <div class="evidence">
         <article class="creators">
           <header>
             <h3>The Creators</h3>            
             <figure>
-              <img src="assets/img/doyle.jpg" width="250" height="355" class="doyle-picture" alt="Doyle-preview Image">
-              <img src="assets/img/christie.jpg" class="christie-picture" alt="Christie-preview Image">
+              <img src="assets/img/doyle.jpg" width="250" height="355" class="doyle-picture" alt="A Portrait of Sir Arthur Conan Doyle">
+              <img src="assets/img/christie.jpg" width="250" height="355" class="christie-picture" alt="A Portrait of Dame Agatha Christie">
               <figcaption><u>Arthur Conan Doyle (left) and Agatha Christie (right)</u></figcaption>
             </figure>
           </header>
@@ -66,7 +73,7 @@
           <header>
             <h3>Sherlock Holmes</h3>            
             <figure>
-              <img src="assets/img/sherlock.png" class="sherlock-outline" alt="Sherlock-preview Image">
+              <img src="assets/img/sherlock.png" class="sherlock-outline" alt="Silhouette of Sherlock Holmes with deerstalker cap">
               <figcaption><u>Silhouette of Sherlock Holmes</u></figcaption>
             </figure>
           </header>
@@ -79,7 +86,7 @@
           <header>
             <h3>Hercule Poirot</h3>            
             <figure>
-              <img src="assets/img/poirot.png" class="ustinov-picture" alt="Poirot Image">
+              <img src="assets/img/poirot.png" class="ustinov-picture" alt="Picture of the Late, Great Peter Ustinov as Hercule Poirot in Death on the Nile 1978">
               <figcaption><u>The Late, Great Peter Ustinov as Hercule Poirot in Death on the Nile (1978)</u></figcaption>
             </figure>
           </header>
@@ -117,7 +124,7 @@
           </tr>
           <tr>
             <td>The Memoirs of Sherlock Holmes</td>
-            <td>1887</td>
+            <td>1893/1894</td>
             <td>12 Short Stories</td>
           </tr>
           <tr>
@@ -163,7 +170,7 @@
           </tr>
           <tr>
             <td>The Murder on the Links</td>
-            <td>1920</td>
+            <td>1923/td>
             <td>Novel</td>
           </tr>
           <tr>
@@ -233,8 +240,10 @@
   </main>
   <h3 id="comments">Comments (Not fully functional, still under construction)</h3>
     <form id="comment_form">
+      <label for="Username" class="visually-hidden">Name</label>
         <input type="text" id="Username" placeholder="Your Name Here" required>
-        <textarea id="comment_text" placeholder="Write a comment..." required></textarea>
+        <label for="comment-text" class="visually-hidden">Comment</label>
+        <textarea id="comment-text" placeholder="Write a comment..." required></textarea>
         <button type="submit">Submit</button>
     </form>
     <aside id="comment_section">
@@ -246,7 +255,7 @@
   
 
   <footer class="primary">
-    <p>&copy; 2026 The Ginger</p>
+    <p>&copy; 2026 The Ginger  | <a href="#top" class="up-arrow">Top Link</a> | <a href="mailto:jhicks3@ualr.edu" title="my email" class="mail-icon">Contact Me</a></p>
   </footer>
 
 </body>

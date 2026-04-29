@@ -13,38 +13,70 @@
 
     <!-- Style Sheet -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Java script -->
+    <script src="assets/js/marsjava.js" defer></script>
 </head>
 
-<body>
+<body id="top">
 
   <a class="visually-hidden" href="#main-content">Skip to main content</a>
   <header class="primary">
+    <div class="theme-switch-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" aria-label="Toggle dark and light mode">
+        <span class="slider-round"></span>
+      </label>
+      <span>Color Theme</span>
+    </div>    
     <h1>Sleuth vs. Sleuth</h1>
-    <p class="subtitle"><strong>Holmes and Poirot - The Great Literay Detectives</strong></p>
-    <nav class="primary-container" aria-label="Primary Navigation">
+    <p class="subtitle"><strong>Holmes and Poirot - The Great Literary Detectives</strong></p>
+    <nav class="primary" aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html"><strong>The Main Page</strong></a></li>
         <li><a href="creators.html"><strong>The Creators</strong></a></li>
         <li><a href="sherlock.html"><strong>Sherlock Holmes</strong></a></li>
         <li><a href="poirot.html"><strong>Hercule Poirot</strong></a></li>
         <li><a href="about.html"><strong>About Me</strong></a></li>
-        <li><a href="contact.html"><strong>My Deets</strong></a></li>
-        <li><a href="resources.html"><strong>Getting Sourced</strong></a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main landmark gives you a clean selector target for weeks 6–9 -->
-    <main id="main-content" class="container">
-      <article>
-        <header>
-          <h3>A Little About Me</h3>
-          <p>Not much to put here, just a lover of mysteries, who fell in love with these two authors.</p>
-        </header>
+    <main id="main-content" class="aboutme-container">
+      <article class="aboutmeinfo">
+          <h2>A Little About Me</h2>
+          <p>Not much to put here, just a lover of mysteries, who fell in love with these two authors. This project is a product of my
+            Web Technologies class at UALR.
+          </p>
+          <figure class="ualrimg">
+            <img class="img-center" src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo">
+            <figcaption>University of Arkansas at Little Rock Logo</figcaption>
+          </figure>
+          <p>If you would like a walkthrough on how I created this blog, or need tutorials on specific methods of Web Design, please click the below link for my YouTube Channel!
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=XHL6Bvp3Z7RSJIAq" target="_blank">Web Design Tactics and Best Practices</a>
+          </p>
       </article>
+      <h3>Send Me An Email</h3>
+      <form action="https://formspree.io/f/mzdykyow" method="POST" class="emailform">
+        <label for="fname" class="fname">First Name: 
+          <input type="text" id="fname" name="fname" required placeholder="Required">
+        </label>
+        <label for="lname" class="lname">Last Name: 
+          <input type="text" id="lname" name="lname" required placeholder="Required">
+        </label>
+        <label for="email" class="email">Your Email Address:
+          <input type="email" id="email" name="email" required placeholder="Required">
+        </label>
+        <label for="message" class="message">Your Message:
+          <textarea name="message" id="message" required placeholder="Required"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button class="emailbutton" type="submit">Send</button>
+      </form>
     </main>
   <footer class="primary">
-    <p>&copy; 2026 The Ginger</p>
+    <p>&copy; 2026 The Ginger  | <a href="#top" class="up-arrow">Top Link</a> | <a href="mailto:jhicks3@ualr.edu" title="my email" class="mail-icon">Contact Me</a></p>
   </footer>
 
 </body>

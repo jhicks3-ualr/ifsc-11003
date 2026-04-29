@@ -3,14 +3,88 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root{
+  --box-shadow: inset 4px 4px 15px 0px #000000;
+  --table-background: #c0c0c0;
+  --text-color: #000000;
+  --background-color: #dddddd;
+  --border-color: 1px solid #000000;
+}
+
+[theme="dark"] {
+  --box-shadow: inset 4px 4px 15px 0px rgba(207, 202, 202, 0.904);
+  --table-background: #636363;
+  --text-color: #fafafa;
+  --background-color: #000000;
+  --border-color: 1px solid #ffffff;
+}
 body {
   font-family: "Felipa", serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  background-image: url("/mars_rover_final/assets/img/house.png");
+  background-image: url("../img/house.png");
   background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  color: var(--text-color);
 }
+
+/* Slider styling */
+
+.theme-slider {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-slider input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-round {
+  background-color: #000000;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider-round:before{
+  background-color: #a5a3a3;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  border-radius: 50%;
+}
+
+input:checked+.slider-round{
+  background-color: #ffffff;
+}
+
+input:checked+.slider-round:before{
+  transform: translateX(26px);
+}
+
+
+.up-arrow {color: transparent; text-decoration: none; display: inline-block; width: 1em; height: 1em; overflow: hidden;}
+.up-arrow::before {content: "\2B85"; color: blue; position: absolute;}
+.mail-icon {color: transparent; text-decoration: none; display: inline-block; width: 1em; height: 1em; overflow: hidden;}
+.mail-icon::before {content: "\2709"; color: blue; position: absolute;}
 
 .visually-hidden {
   border: 0;
@@ -40,20 +114,35 @@ body {
 }
 
 header.primary {
-  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--background-color);
   text-align: center;
-  width: 100%;
   padding: 30px;
 }
+
+.theme-switch-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-end;
+}
+
 p.subtitle{
   margin-bottom: 15px;
 }
+
 header.primary a{
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
 }
 
-nav.primary-container ul{
+nav.primary{
+  width: 100%;
+}
+nav.primary ul{
   padding:0px;
   display:flex;
   flex-direction: row;
@@ -62,20 +151,20 @@ nav.primary-container ul{
   gap:20px;
 }
 
-nav.primary-container ul li{
+nav.primary ul li{
   list-style-type: none;
   flex:1;
 }
 
-nav.primary-container ul li a{
+nav.primary ul li a{
   background-color: rgba(247, 247, 247, 0);
   padding: 3px 15px;
-  border: 1px solid rgb(0, 0, 0);
+  border: var(--border-color);
   border-radius: 60px 50px 60px 50px;
   display:block;
 }
 
-nav.primary-container ul li a:hover {
+nav.primary ul li a:hover {
   background-color: rgba(114, 106, 106, 0.514);
   transform: scale(1.1); 
 }
@@ -87,7 +176,7 @@ main.container{
 
 #the-plot{
   display: grid;
-  background-color: #dddddd;
+  background-color: var(--background-color);
   margin: 30px;
   grid-template-columns: min-content 1fr;
   text-align: left;
@@ -97,7 +186,7 @@ main.container{
   max-height: 200px;
   overflow: auto;
   position: relative;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
 }
 
 #the-plot img{
@@ -121,11 +210,11 @@ main.container{
 }
 
 h2.blog-title{
-  background-color: #dddddd;
+  background-color: var(--background-color);
   width: 100%;
   border-radius: 10px;
   grid-area: 1 / 1 / 2 / 4;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   padding: 5px;
 }
 
@@ -140,10 +229,10 @@ div.evidence {
 }
 
 article.creators{
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   border-radius: 10px;
   margin: 10px;
-  background-color:#dddddd;
+  background-color: var(--background-color);
   grid-area: 1 / 1 / 2 / 5;
   padding: 5px;
 }
@@ -153,12 +242,12 @@ article.creators p{
 }
 
 article.holmes{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   box-shadow: 5px 5px 20px;
   border-radius: 10px;
   margin: 10px;
   grid-area: 2 / 1 / 3 / 3;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   padding: 5px;
 }
 
@@ -169,10 +258,10 @@ article.holmes p{
 article.poirot{
   box-shadow: 5px 5px 20px;
   border-radius: 10px;
-  background-color:#dddddd;
+  background-color: var(--background-color);
   margin: 10px;
   grid-area: 2 / 3 / 3 / 5;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   padding: 5px;
 }
 
@@ -181,13 +270,13 @@ article.poirot p{
 }
 
 #works h2{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   border-radius: 10px;
   margin: 10px;
 }
 
 caption{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   border-radius: 5px;
   margin: 5px;
   text-decoration: underline;
@@ -204,28 +293,28 @@ table{
 }
 
 th{
-  background-color: #c0c0c0;
+  background-color: var(--table-background);
 }
 
 tr:nth-child(even){
-  background-color: #c0c0c0;
+  background-color: var(--table-background);
   padding: 5px;
   border-radius: 5px;
 }
 
 tr:nth-child(odd){
-  background-color:#dddddd;
+  background-color:var(--background-color);
   padding: 5px;
   border-radius: 5px;
 }
 
 tr:hover td{
-  background-color: #464545;
+  background-color: #2e6b5e;
   color:#dddddd;
 }
 
 p.main-note{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   padding: 5px;
   border-radius: 5px;
   width: 75%;
@@ -235,7 +324,7 @@ p.main-note{
 }
 
 #works h3{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   padding: 5px;
   border-radius: 5px;
   width: 75%;
@@ -245,7 +334,7 @@ p.main-note{
 }
 
 #works ul{
-  background-color: #dddddd;
+  background-color: var(--background-color);
   border-radius: 5px;
   width: 75%;
   margin-right: auto;
@@ -263,7 +352,7 @@ p.main-note{
 
 
 #quotes{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   padding: 5px;
   border-radius: 5px;
   width: 50%;
@@ -284,33 +373,33 @@ p.main-note{
 
 #comments {
   margin-top: 10px;
-  background-color:#dddddd;
+  background-color: var(--background-color);
 }
 
 form, footer{
-  background-color:#dddddd;
+  background-color: var(--background-color);
 }
 
 /* Creators page CSS */
 
 #creators-intro{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   width: 75%;
   margin: 10px auto;
   border-radius: 10px;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   padding: 10px;
 }
 
 article.doyle-intro-container{
   display: grid;
-  background-color:#dddddd;
+  background-color: var(--background-color);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   width: 75%;
   margin: 5px auto;
   border-radius: 10px;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   overflow: auto;
   padding: 10px;
 }
@@ -337,13 +426,13 @@ figure.doyle-intro{
 
 article.christie-intro-container{
   display: grid;
-  background-color:#dddddd;
+  background-color: var(--background-color);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   width: 75%;
   margin: 5px auto;
   border-radius: 10px;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   overflow: auto;
   padding: 10px;
   
@@ -368,23 +457,23 @@ figure.christie-intro{
 /* Sherlock Page */
 
 #sherlock-intro{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   width: 75%;
   margin: 10px auto;
   border-radius: 10px;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   padding: 10px;
 }
 
 article.sherlock-page-container{
   display: grid;
-  background-color:#dddddd;
+  background-color: var(--background-color);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   width: 75%;
   margin: 5px auto;
   border-radius: 10px;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   overflow: auto;
   padding: 20px;
   gap: 10px;
@@ -427,23 +516,23 @@ p.sherlock-page-p2{
 /* Poirot Page */
 
 #poirot-intro{
-  background-color:#dddddd;
+  background-color: var(--background-color);
   width: 75%;
   margin: 10px auto;
   border-radius: 10px;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   padding: 10px;
 }
 
 article.poirot-page-container{
   display: grid;
-  background-color:#dddddd;
+  background-color: var(--background-color);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
   width: 100%;
   margin: 5px auto;
   border-radius: 10px;
-  box-shadow: inset 4px 4px 15px 0px #000000;
+  box-shadow: var(--box-shadow);
   overflow: auto;
   padding: 20px;
   gap: 10px;
@@ -472,33 +561,120 @@ p.poirot-page-p{
 
 /* About me page */
 
+main.aboutme-container{
+  background-color: var(--background-color);
+  font-size: 20px;
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  overflow: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto auto;
+}
+
+article.aboutmeinfo{
+  grid-area: 1 / 1 / 2 / 3;
+}
+.img-center{
+  border-style: inset;
+  border-width: 4px;
+}
+
+figure.ualrimg{
+  margin: 20px;
+}
+
+#main-content h3{
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.emailform{
+  grid-area: 3 / 1 / 4 / 3;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+label.fname{
+  grid-area: 1 / 1 / 2 / 2; 
+}
+
+label.lname{
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+label.email{
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+label.message{
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+label.message textarea{
+  width: 75%;
+  min-height: 100px;
+  padding: 5px;
+}
+
+button.emailbutton{
+  grid-area: 4 / 1 / 5 / 3; 
+  color: var(--text-color);
+  border: var(--border-color);
+  background-color: var(--background-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+@media screen and (max-width: 900px) {
+  div.evidence{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main.container, table, .aboutme-container{
+    width: 90%;
+  }
+}
 
 @media screen and (max-width:600px) {
 
-  .container{
-  width:95vw;
+  .container, .doyle-intro, .christie-intro, .sherlock-page-container, .poirot-page-container, .aboutme-container{
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
   }
 
-  .doyle-intro,.christie-intro, .sherlock-page-container, .poirot-page-container{
-  width:95vw;
+  div.evidence{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   nav.primary ul{
     flex-direction: column;
-    justify-content: space-evenly;
-    gap:20px;
-  }
-
-  nav.primary a{
-    display:block;
-    
+    gap: 20px;
   }
 
   nav.primary ul li{
-  list-style-type: none;
-  width: 75%;
+  width: 100%;
+}
+  #the-plot img{
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  p.doyle-intro, p.christie-intro, p.sherlock-page-p1{
+    text-align: left;
+    padding: 10px 0;
+  }
+
 }
 
-
-}
 

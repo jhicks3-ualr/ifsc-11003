@@ -13,29 +13,37 @@
 
     <!-- Style Sheet -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Java script -->
+    <script src="assets/js/marsjava.js" defer></script>
 </head>
 
-<body>
+<body id="top">
  
   <a class="visually-hidden" href="#main-content">Skip to main content</a>
   <header class="primary">
+    <div class="theme-switch-container">
+      <label class="theme-slider" for="checkbox">
+        <input type="checkbox" id="checkbox" aria-label="Toggle dark and light mode">
+        <span class="slider-round"></span>
+      </label>
+      <span>Color Theme</span>
+    </div>    
     <h1>Sleuth vs. Sleuth</h1>
-    <p class="subtitle"><strong>Holmes and Poirot - The Great Literay Detectives</strong></p>
-    <nav class="primary-container" aria-label="Primary Navigation">
+    <p class="subtitle"><strong>Holmes and Poirot - The Great Literary Detectives</strong></p>
+    <nav class="primary" aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html"><strong>The Main Page</strong></a></li>
         <li><a href="creators.html"><strong>The Creators</strong></a></li>
         <li><a href="sherlock.html"><strong>Sherlock Holmes</strong></a></li>
         <li><a href="poirot.html"><strong>Hercule Poirot</strong></a></li>
         <li><a href="about.html"><strong>About Me</strong></a></li>
-        <li><a href="contact.html"><strong>My Deets</strong></a></li>
-        <li><a href="resources.html"><strong>Getting Sourced</strong></a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main landmark gives you a clean selector target for weeks 6–9 -->
-  <main id="creators-content" class="creator-container">
+  <main id="main-content" class="creator-container">
     <section id="creators-intro">
       <h2>Literary Juggernauts</h2>
       <p>Agatha Christie and Arthur Conan Doyle wrote arguably the two greatest detectives in history. But who were they and what inspired them?
@@ -45,11 +53,11 @@
     <article class="doyle-intro-container">
         <h3 class="doyle-intro">From Doctor to Author...and more</h3>
         <figure class="doyle-intro">
-          <img src="assets/img/doyle_statue.jpg" width="300" class="doyle-statue" alt="Doyle-page Image">
+          <img src="assets/img/doyle_statue.jpg" width="300" class="doyle-statue" alt="A Statue of Sir Arthur Conan Doyle">
           <figcaption>Statue of Sir Arthur Conan Doyle in Crowborough Cross, East Sussex, UK</figcaption>
         </figure>
         <p class="doyle-intro">Arthur Conan Doyle was born in Scotland, and after attending the University of Edinburgh in 1881, he opened his own medical practice. Unfortunately, his practice was not
-          very successful, so he began by writing historical novels for some time before trying his hand at the nonfiction. He published his first Holmes novel <i>A Study in Scarlett</i>
+          very successful, so he began by writing historical novels for some time before trying his hand at the nonfiction. He published his first Holmes novel <i>A Study in Scarlet</i>
           in 1887. But, he did not stop at novels and short stories, he was also a fervent proponent of Spritualism and the Mystic Arts. After losing his son in World War I, Doyle was known
           to frequent psychics, have tarot readings and explore the paranormal. He famously had a falling out with his friend Harry Houdini after Houdini revealed that his tricks were
           simply just tricks and not magic. In his autobiography Doyle expressed his enjoyment of and appreciation for his long time idol Oscar Wilde, his affections for Wilde continued
@@ -60,15 +68,15 @@
       <article class="christie-intro-container">
         <h3 class="christie-intro">Queen of the Whodunit</h3>
         <figure class="christie-intro">
-          <img src="https://visitwallingford.uk/wp-content/uploads/resized/2024/05/BUR00423-agatha-768x0-c-default.jpg" width="300" class="christie-statue" alt="Christie-page Image">
+          <img src="https://visitwallingford.uk/wp-content/uploads/resized/2024/05/BUR00423-agatha-768x0-c-default.jpg" width="300" class="christie-statue" alt="A Statue of Dame Agatha Christie">
           <figcaption>Statue of Agatha Christie in The Kinecroft, Wallingford, Oxfordshire, UK</figcaption>
         </figure>
         <p class="christie-intro">Born Agatha Mary Clarissa Miller in Torquay, Devon, England. In 1914 she would marry Colonel Archibald Christie, and work as a nurse during World War I, however the two would
           later divorce in 1928, but she would remarry archaeologist Max Mallowan in 1930. However, even before her second marriage she was already a wildly successful author, and was known as 
           the Queen of the Whodunit. She would write her first Hercule Poirot novel <i>The Mysterious Affair at Styles</i> in 1920, sparking one of the longest running book series in history. She would 
           continue the Hercule Poirot series for another 50 years. That doesn't even scratch the surface however, as she is noted to have written some 95 books, including 66 detective novels, many short 
-          story collections, she wrote two accounts of her live and travels, 6 romance novels, she coauthored 3 mysteries, all of that in addition to composing 25 plays. Her novel <i>And Then There Were None</i> 
-          is a personal favorite of mine, and is considered one of the world's best selling mystery novels, and even inspring the movie/game Clue. Christie lived a very full life culminating in 1971 with her 
+          story collections, she wrote two accounts of her life and travels, 6 romance novels, she coauthored 3 mysteries, all of that in addition to composing 25 plays. Her novel <i>And Then There Were None</i> 
+          is a personal favorite of mine, and is considered one of the world's best selling mystery novels, and even inspiring the movie/game Clue. Christie lived a very full life culminating in 1971 with her 
           appointment as Dame Commander of the Order of the British Empire. She would sadly pass away in 1976 at the age of 85.
         </p>
       </article>
@@ -78,7 +86,7 @@
   
 
   <footer class="primary">
-    <p>&copy; 2026 The Ginger</p>
+    <p>&copy; 2026 The Ginger  | <a href="#top" class="up-arrow">Top Link</a> | <a href="mailto:jhicks3@ualr.edu" title="my email" class="mail-icon">Contact Me</a></p>
   </footer>
 
 </body>
