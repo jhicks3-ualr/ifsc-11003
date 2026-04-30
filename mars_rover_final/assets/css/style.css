@@ -410,7 +410,7 @@ p.doyle-intro{
   text-align: left;
 }
 
-h3.doyle-intro{
+#main-content h3.doyle-intro{
   grid-area: 1 / 1 / 2 / 3;
   margin: 5px;
 }
@@ -444,7 +444,7 @@ p.christie-intro{
   text-align: right;
 }
 
-h3.christie-intro{
+#main-content h3.christie-intro{
   grid-area: 1 / 1 / 2 / 3;
   margin: 5px;
 }
@@ -479,7 +479,7 @@ article.sherlock-page-container{
   gap: 10px;
 }
 
-h3.sherlock-page{
+#main-content h3.sherlock-page{
   grid-area: 1 / 1 / 2 / 3;
 }
 
@@ -538,7 +538,7 @@ article.poirot-page-container{
   gap: 10px;
 }
 
-h3.poirot-page{
+#main-content h3.poirot-page{
   grid-area: 1 / 1 / 2 / 3;
 }
 
