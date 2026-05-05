@@ -591,7 +591,7 @@ img.slick{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: rgb(133, 133, 133);
+  color: rgb(192, 192, 192);
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */
