@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
 
     <!-- Style Sheet -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -44,37 +46,23 @@
   </header>
 
   
-    <main id="main-content" class="aboutme-container">
-      <article class="aboutmeinfo">
-          <h2>A Little About Me</h2>
-          <p>Not much to put here, just a lover of mysteries, who fell in love with these two authors. This project is a product of my
-            Web Technologies class at UALR.
-          </p>
-          <figure class="ualrimg">
-            <img class="img-center" src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo">
-            <figcaption>University of Arkansas at Little Rock Logo</figcaption>
-          </figure>
-          <p>If you would like a walkthrough on how I created this blog, or need tutorials on specific methods of Web Design, please click the below link for my YouTube Channel!
-            <a href="https://youtu.be/dQw4w9WgXcQ?si=XHL6Bvp3Z7RSJIAq" target="_blank">Web Design Tactics and Best Practices</a>
-          </p>
-      </article>
-      <h3>Send Me An Email</h3>
-      <form action="https://formspree.io/f/mzdykyow" method="POST" class="emailform">
-        <label for="fname" class="fname">First Name: 
-          <input type="text" id="fname" name="fname" required placeholder="Required">
-        </label>
-        <label for="lname" class="lname">Last Name: 
-          <input type="text" id="lname" name="lname" required placeholder="Required">
-        </label>
-        <label for="email" class="email">Your Email Address:
-          <input type="email" id="email" name="email" required placeholder="Required">
-        </label>
-        <label for="message" class="message">Your Message:
-          <textarea name="message" id="message" required placeholder="Required"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button class="emailbutton" type="submit">Send</button>
-      </form>
+    <main id="main-content" class="recommendation-container">
+        <h1 class="recommend-title">Book Recommendations</h1>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>        
+    <script src="assets/js/scripts.js"></script>
+        <div class="fade-container">
+        <div><img class="slick" src="assets/img/book_covers/scarlet.jpg" alt="Book Cover of A Study in Scarlett"></div>
+        <div><img class="slick" src="assets/img/book_covers/hound.jpeg" alt="Book Cover of The Hound of the Baskervilles"></div>
+        <div><img class="slick" src="assets/img/book_covers/cb-sh.jpeg" alt="Book Cover of The Casebook of Sherlock Holmes"></div>
+        <div><img class="slick" src="assets/img/book_covers/links.jpeg" alt="Book Cover of The Murder on the Links"></div>
+        <div><img class="slick" src="assets/img/book_covers/express.jpeg" alt="Book Cover of Murder on the Orient Express"></div>
+        <div><img class="slick" src="assets/img/book_covers/abc.jpg" alt="Book Cover of The ABC Murders"></div>
+        </div>
+        <p>I recommend these books as not only riveting tales of twists and turns but also, brilliant examples of the abilities of our two detectives. These stories showcase 
+            the true dedication and brilliance of Holmes and Poirot.
+        </p>
     </main>
   <footer class="primary">
     <p>&copy; 2026 The Ginger  | <a href="#top" class="up-arrow">Top Link</a> | <a href="mailto:jhicks3@ualr.edu" title="my email" class="mail-icon">Contact Me</a></p>

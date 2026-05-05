@@ -22,3 +22,19 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+
+$(document).ready(function() {
+
+    $('.fade-container').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      slide: 'div',
+      cssEase: 'ease-in-out',
+      autoplay: true,
+      autoplaySpeed: 7000
+    });
+
+
+});

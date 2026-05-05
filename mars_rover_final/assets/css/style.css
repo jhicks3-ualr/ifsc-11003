@@ -559,6 +559,63 @@ p.poirot-page-p{
   text-align: left;
 }
 
+/* Recommendations page */
+
+.recommend-title{
+  background-color: var(--background-color);
+  width: 75%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+}
+
+img.slick{
+    max-width:100%;
+    min-width: 302px;
+    min-height: 466px;
+    margin: 0 auto;
+    border: 3px double;
+}
+
+.fade-container{
+    margin:auto;
+    width:70vw;
+    /* Set Max Content Width */
+    max-width:700px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: rgb(133, 133, 133);
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:rgb(255, 255, 255);
+}
+
+.recommendation-container p{
+  background-color: var(--background-color);
+  width: 75%;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
+}
+
 /* About me page */
 
 main.aboutme-container{
